@@ -24,14 +24,24 @@ body{background:#DDD8CE;font-family:'Inter',sans-serif;color:var(--dark)}
 /* ─── STICKY LANG BAR ─── */
 .lang-bar{
   position:sticky;top:0;z-index:200;
-  display:flex;justify-content:flex-end;align-items:center;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
   padding:8px 16px;
   background:rgba(250,246,238,0.96);
   backdrop-filter:blur(8px);
   -webkit-backdrop-filter:blur(8px);
   border-bottom:1px solid rgba(201,169,97,0.18);
 }
-.lang-btns{display:flex;gap:5px}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;min-width:0}
+.brand-logo{
+  width:30px;height:30px;flex:0 0 auto;background:var(--gold);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#fff;
+}
+.brand-name{
+  font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--dark);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.lang-btns{display:flex;gap:5px;flex:0 0 auto}
 .lang-btn{
   padding:5px 11px;border-radius:20px;
   border:1.5px solid var(--border);
@@ -40,12 +50,22 @@ body{background:#DDD8CE;font-family:'Inter',sans-serif;color:var(--dark)}
   cursor:pointer;letter-spacing:.3px;transition:all .15s;
 }
 .lang-btn.active{background:var(--gold);border-color:var(--gold);color:#fff}
+/* Besh credit (bottom ad) */
+.besh-credit{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:15px 20px 22px;background:var(--cream);
+  border-top:1px solid var(--border);
+  text-decoration:none;color:var(--muted);font-size:12px;letter-spacing:.2px;
+}
+.besh-credit b{color:var(--gold);font-weight:700}
+.besh-credit .bc-mark{width:15px;height:15px;flex:0 0 auto;color:var(--gold)}
+.besh-credit:active{opacity:.6}
 
 /* ─── PAGE WRAPPER ─── */
 .page{max-width:520px;margin:0 auto;background:var(--cream);min-height:100vh;box-shadow:0 0 60px rgba(0,0,0,.08)}
 
 /* ─── HERO ─── */
-.hero-section{padding:32px 20px 0}
+.hero-section{padding:32px 20px 0;display:none}   /* menu-first: big hero hidden, name lives in header */
 .hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
 .hero-inner.hero-noimg{grid-template-columns:1fr}   /* hero photo disabled/empty → single column */
 .hero-eyebrow{
@@ -184,7 +204,7 @@ body{background:#DDD8CE;font-family:'Inter',sans-serif;color:var(--dark)}
 .feat-sub{font-size:11px;color:var(--muted)}
 
 /* ─── MENU CTA DIVIDER ─── */
-.menu-cta-section{padding:0 20px 28px;text-align:center}
+.menu-cta-section{padding:0 20px 28px;text-align:center;display:none}   /* menu shown by default, no toggle */
 .divider{display:flex;align-items:center;gap:12px;margin-bottom:20px}
 .divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--border)}
 .divider-text{font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;white-space:nowrap}
@@ -202,14 +222,14 @@ body{background:#DDD8CE;font-family:'Inter',sans-serif;color:var(--dark)}
 .show-menu-btn.open .smb-arrow{transform:rotate(180deg)}
 
 /* ─── MENU SECTION ─── */
-#menu{background:var(--cream);padding:0 20px 40px;display:none}
+#menu{background:var(--cream);padding:14px 20px 34px;display:block}
 #menu.visible{display:block}
 .menu-section-title{
   font-family:'Playfair Display',serif;font-size:24px;font-weight:700;
   color:var(--dark);padding:28px 0 18px;
 }
 .menu-section-title em{font-style:italic;color:var(--gold)}
-.cats{display:flex;gap:7px;overflow-x:auto;padding-bottom:4px;margin-bottom:22px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.cats{display:flex;gap:7px;overflow-x:auto;padding:12px 0 8px;margin-bottom:18px;scrollbar-width:none;-webkit-overflow-scrolling:touch;position:sticky;top:46px;z-index:150;background:var(--cream)}
 .cats::-webkit-scrollbar{display:none}
 .cat{
   padding:8px 17px;border-radius:30px;font-size:13px;font-weight:600;
@@ -319,8 +339,12 @@ body{background:#DDD8CE;font-family:'Inter',sans-serif;color:var(--dark)}
 
 <div class="page">
 
-<!-- [A] STICKY LANG BAR -->
+<!-- [A] STICKY HEADER: logo + name + lang -->
 <div class="lang-bar">
+  <a class="brand" href="#" onclick="return false">
+    <span class="brand-logo" id="l-header-logo">M</span>
+    <span class="brand-name" id="l-header-name">Menu</span>
+  </a>
   <div class="lang-btns">
     <button class="lang-btn" data-lang="ru" onclick="setLang('ru')">RU</button>
     <button class="lang-btn" data-lang="uz_lat" onclick="setLang('uz_lat')">UZ-Lat</button>
@@ -328,7 +352,17 @@ body{background:#DDD8CE;font-family:'Inter',sans-serif;color:var(--dark)}
   </div>
 </div>
 
-<!-- [B] LANDING -->
+<!-- [D] MENU (moved to top — appears immediately) -->
+<section id="menu">
+  <div class="menu-section-title"><span id="l-menu-heading">Bizning <em>menyumiz</em></span></div>
+  <div class="cats" id="cats"></div>
+  <div class="tagchips" id="tagchips" style="display:none"></div>
+  <div class="grid" id="grid">
+    <div class="menu-loading" id="menuLoading" style="grid-column:1/-1">Yuklanmoqda...</div>
+  </div>
+</section>
+
+<!-- [B] LANDING (restaurant info — below the menu) -->
 <div id="landing">
 
   <!-- 1. HERO -->
@@ -387,15 +421,7 @@ body{background:#DDD8CE;font-family:'Inter',sans-serif;color:var(--dark)}
   </button>
 </div>
 
-<!-- [D] MENU SECTION -->
-<section id="menu">
-  <div class="menu-section-title"><span id="l-menu-heading">Bizning <em>menyumiz</em></span></div>
-  <div class="cats" id="cats"></div>
-  <div class="tagchips" id="tagchips" style="display:none"></div>
-  <div class="grid" id="grid">
-    <div class="menu-loading" id="menuLoading" style="grid-column:1/-1">Yuklanmoqda...</div>
-  </div>
-</section>
+<!-- [D] menu moved to top -->
 
 <!-- [E] FOOTER -->
 <footer class="site-footer">
@@ -405,6 +431,14 @@ body{background:#DDD8CE;font-family:'Inter',sans-serif;color:var(--dark)}
   <div class="footer-socials" id="l-footer-socials"></div>
   <div class="footer-copy" id="l-footer-copy"></div>
 </footer>
+
+<!-- [F] BESH CREDIT (ad) -->
+<a class="besh-credit" href="https://kirigayakayto.github.io/besh-site/" target="_blank" rel="noopener">
+  <svg class="bc-mark" viewBox="0 0 400 400" fill="none" stroke="currentColor" stroke-width="34" stroke-linecap="round" aria-hidden="true">
+    <line x1="200" y1="161" x2="290.63" y2="91.99"/><line x1="237.09" y1="187.95" x2="330.73" y2="252.82"/><line x1="222.92" y1="231.55" x2="190.16" y2="340.66"/><line x1="177.08" y1="231.55" x2="63.19" y2="234.11"/><line x1="162.91" y1="187.95" x2="125.28" y2="80.43"/>
+  </svg>
+  <span id="l-besh-credit-text"><b>Besh</b>da yaratilgan · raqamli menyu</span>
+</a>
 
 </div><!-- /page -->
 
@@ -632,6 +666,8 @@ function renderLanding() {
   document.title = d.name || 'Menu';
   const _fn = document.getElementById('l-footer-name'); if (_fn) _fn.textContent = d.name || '';
   const _fl = document.getElementById('l-footer-logo'); if (_fl) _fl.textContent = (d.name || 'M').charAt(0).toUpperCase();
+  const _hn = document.getElementById('l-header-name'); if (_hn) _hn.textContent = d.name || 'Menu';
+  const _hl = document.getElementById('l-header-logo'); if (_hl) _hl.textContent = (d.name || 'M').charAt(0).toUpperCase();
   document.getElementById('l-tagline').textContent = lang(d.tagline);
 
   // features top
@@ -758,6 +794,14 @@ function renderLanding() {
     <a class="footer-social" href="${safeUrl(c.telegram_url)}" target="_blank" rel="noopener">${icon('telegram')}</a>
     <a class="footer-social" href="tel:${esc(c.phone)}">${icon('phone')}</a>`;
   document.getElementById('l-footer-copy').textContent = '© ' + new Date().getFullYear() + ' ' + d.name;
+
+  // Besh credit (bottom ad), localized
+  const _bc = document.getElementById('l-besh-credit-text');
+  if (_bc) _bc.innerHTML = currentLang === 'ru'
+    ? 'Сделано на <b>Besh</b> · цифровое меню'
+    : currentLang === 'uz_cyr'
+      ? '<b>Besh</b>да яратилган · рақамли меню'
+      : '<b>Besh</b>da yaratilgan · raqamli menyu';
 }
 
 // ─── ESCAPE ──────────────────────────────────────────────────────────────────
