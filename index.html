@@ -6,7 +6,7 @@
 <title>Menu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 [hidden]{display:none!important}
@@ -22,8 +22,9 @@
   --faint:#9A93AC;
   --card:#FFFFFF;
   --border:#EAE6F5;
-  --serif:'Spectral',Georgia,serif;
-  --sans:'Manrope',system-ui,-apple-system,sans-serif;
+  /* один гротеск на всё — иерархия строится весом и трекингом, не сменой шрифта */
+  --serif:'Onest',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --sans:'Onest',system-ui,-apple-system,'Segoe UI',sans-serif;
 }
 html{scroll-behavior:smooth}
 body{background:#E9E4F5;font-family:var(--sans);color:var(--dark)}
@@ -233,16 +234,16 @@ body{background:#E9E4F5;font-family:var(--sans);color:var(--dark)}
 #menu.visible{display:block}
 
 /* — head: title + search — */
-.menu-head{padding:22px 0 16px}
+.menu-head{padding:30px 0 20px}
 .menu-eyebrow{
-  font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:2.4px;
-  text-transform:uppercase;color:var(--gold);display:block;margin-bottom:7px;
+  font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:2.6px;
+  text-transform:uppercase;color:var(--gold);display:block;margin-bottom:9px;
 }
 .menu-section-title{
-  font-family:var(--serif);font-size:30px;font-weight:700;line-height:1.1;
-  color:var(--dark);letter-spacing:-.5px;
+  font-family:var(--sans);font-size:34px;font-weight:600;line-height:1.05;
+  color:var(--dark);letter-spacing:-1.1px;
 }
-.menu-section-title em{font-style:italic;color:var(--gold)}
+.menu-section-title em{font-style:normal;color:inherit}
 .searchbox{position:relative;margin-top:16px}
 .searchbox svg{
   position:absolute;left:14px;top:50%;transform:translateY(-50%);
@@ -289,10 +290,10 @@ body{background:#E9E4F5;font-family:var(--sans);color:var(--dark)}
 }
 .ct-body{position:absolute;left:0;right:0;bottom:0;padding:14px 14px 13px}
 .ct-name{
-  display:block;font-family:var(--serif);font-size:17px;font-weight:700;
-  color:#fff;line-height:1.15;margin-bottom:3px;
+  display:block;font-family:var(--sans);font-size:17px;font-weight:600;
+  color:#fff;line-height:1.15;margin-bottom:3px;letter-spacing:-.3px;
 }
-.ct-count{display:block;font-size:11px;font-weight:500;color:rgba(255,255,255,.72)}
+.ct-count{display:block;font-size:11px;font-weight:400;color:rgba(255,255,255,.66);letter-spacing:.2px}
 
 /* — sticky bar inside a category: back + category switcher — */
 .dishbar{
@@ -336,9 +337,9 @@ body{background:#E9E4F5;font-family:var(--sans);color:var(--dark)}
 .tagchip.on{background:var(--accent-soft);color:var(--accent-deep);border-color:rgba(124,92,255,.55)}
 
 /* — dish cards — */
-.cat-heading{padding:16px 0 12px}
-.cat-heading h3{font-family:var(--serif);font-size:23px;font-weight:700;color:var(--dark);letter-spacing:-.3px}
-.cat-heading span{font-size:12px;color:var(--muted);display:block;margin-top:2px}
+.cat-heading{padding:20px 0 14px}
+.cat-heading h3{font-family:var(--sans);font-size:26px;font-weight:600;color:var(--dark);letter-spacing:-.7px}
+.cat-heading span{font-size:12px;color:var(--faint);display:block;margin-top:3px;letter-spacing:.2px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}
 .card{
   background:var(--card);border:1px solid var(--border);border-radius:18px;
@@ -401,30 +402,34 @@ body{background:#E9E4F5;font-family:var(--sans);color:var(--dark)}
   .ctile,.card{transition:none}
 }
 
-/* ─── FOOTER ─── */
+/* ─── LANDING OFF ───
+   Витрина ресторана (герой, цифры, контакты, бронь, «фишки») на опубликованном
+   меню не нужна — страница обязана быть только меню. Разметка остаётся в DOM,
+   чтобы renderLanding() продолжал работать; наружу не показывается. */
+#landing{display:none}
+
+/* ─── FOOTER (минимальный) ─── */
 .site-footer{
-  background:var(--green);padding:32px 20px;text-align:center;
+  background:var(--green);padding:30px 22px 26px;text-align:center;
 }
-.footer-logo{
-  width:48px;height:48px;background:var(--gold);border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  margin:0 auto 12px;
-  font-family:var(--serif);font-size:22px;font-weight:700;color:#fff;
-}
+.footer-logo,.footer-tagline{display:none}
 .footer-name{
-  font-family:var(--serif);font-size:20px;font-weight:700;
-  color:#fff;margin-bottom:6px;
+  font-family:var(--sans);font-size:12px;font-weight:600;
+  letter-spacing:2.8px;text-transform:uppercase;
+  color:#fff;margin-bottom:14px;
 }
-.footer-tagline{font-size:12px;color:rgba(255,255,255,.6);margin-bottom:20px;line-height:1.55}
-.footer-socials{display:flex;justify-content:center;gap:14px}
+.footer-contact{font-size:12.5px;line-height:1.85;color:rgba(255,255,255,.5);margin-bottom:16px}
+.footer-contact a{color:rgba(255,255,255,.82);text-decoration:none}
+.footer-contact a:hover{color:#fff}
+.footer-socials{display:flex;justify-content:center;gap:10px}
 .footer-social{
-  width:40px;height:40px;background:rgba(255,255,255,.1);border-radius:50%;
+  width:34px;height:34px;background:rgba(255,255,255,.07);border-radius:10px;
   display:flex;align-items:center;justify-content:center;
   text-decoration:none;transition:background .15s;
 }
-.footer-social:hover{background:rgba(124,92,255,.3)}
-.footer-social svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
-.footer-copy{margin-top:16px;font-size:11px;color:rgba(255,255,255,.35)}
+.footer-social:hover{background:rgba(124,92,255,.35)}
+.footer-social svg{width:15px;height:15px;stroke:rgba(255,255,255,.85);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.footer-copy{margin-top:16px;font-size:10.5px;letter-spacing:.4px;color:rgba(255,255,255,.28)}
 
 /* ─── HERO IMAGE elegance ─── */
 .hero-img-wrap{
@@ -592,6 +597,7 @@ body{background:#E9E4F5;font-family:var(--sans);color:var(--dark)}
   <div class="footer-logo" id="l-footer-logo">M</div>
   <div class="footer-name" id="l-footer-name"></div>
   <div class="footer-tagline" id="l-footer-tagline"></div>
+  <div class="footer-contact" id="l-footer-contact"></div>
   <div class="footer-socials" id="l-footer-socials"></div>
   <div class="footer-copy" id="l-footer-copy"></div>
 </footer>
@@ -722,7 +728,7 @@ const I18N = {
   closed_status:{ ru: "Закрыто", uz_lat: "Yopiq",  uz_cyr: "Ёпиқ"  },
   show_menu:    { ru: "Показать меню", uz_lat: "Menyuni ko'rsatish", uz_cyr: "Менюни кўрсатиш" },
   hide_menu:    { ru: "Скрыть меню",  uz_lat: "Menyuni yashirish",  uz_cyr: "Менюни яшириш"  },
-  our_menu:     { ru: "Наше <em>меню</em>", uz_lat: "Bizning <em>menyumiz</em>", uz_cyr: "Бизнинг <em>менюмиз</em>" },
+  our_menu:     { ru: "Меню", uz_lat: "Menyu", uz_cyr: "Меню" },
   all_cats:     { ru: "Все",  uz_lat: "Barchasi", uz_cyr: "Барчаси" },
   menu_eyebrow: { ru: "МЕНЮ", uz_lat: "MENYU", uz_cyr: "МЕНЮ" },
   search_ph:    { ru: "Поиск по меню", uz_lat: "Menyu bo'yicha qidirish", uz_cyr: "Меню бўйича қидириш" },
@@ -963,6 +969,11 @@ function renderLanding() {
 
   // footer
   document.getElementById('l-footer-tagline').textContent = lang(d.footer_tagline);
+  // Контакты живут только в подвале: телефон кликабелен, адрес — строкой
+  const _fc2 = document.getElementById('l-footer-contact');
+  if (_fc2) _fc2.innerHTML =
+    (c.phone_display ? `<a href="tel:${esc(c.phone)}">${esc(c.phone_display)}</a><br>` : '') +
+    (lang(c.address) ? esc(lang(c.address)) : '');
   document.getElementById('l-footer-socials').innerHTML = `
     <a class="footer-social" href="${safeUrl(c.instagram_url)}" target="_blank" rel="noopener">${icon('instagram')}</a>
     <a class="footer-social" href="${safeUrl(c.telegram_url)}" target="_blank" rel="noopener">${icon('telegram')}</a>
@@ -1158,11 +1169,8 @@ function showView(dishes) {
   const vd = document.getElementById('view-dishes');
   if (vc) vc.hidden = dishes;
   if (vd) vd.hidden = !dishes;
-  // Инфо о ресторане и подвал — только на входном экране, чтобы меню не «тонуло»
-  const landing = document.getElementById('landing');
-  if (landing) landing.hidden = dishes;
-  const foot = document.querySelector('.site-footer');
-  if (foot) foot.hidden = dishes;
+  // Подвал (название + телефон + адрес) остаётся на обоих экранах — это
+  // единственное место с контактами после того, как витрину убрали.
 }
 
 function openCat(name, push) {
