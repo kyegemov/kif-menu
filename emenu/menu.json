@@ -2,8 +2,7 @@
   "settings": {
     "name": "KIF Cake",
     "defaultTheme": "light",
-    "currency": "сум",
-    "tabletQr": false
+    "currency": "сум"
   },
   "categories": [
     {
@@ -1294,10 +1293,10 @@
   "restaurant": {
     "name": "",
     "description": "",
-    "phone": "",
-    "address": "",
+    "phone": "+998883697007",
+    "address": "Navoi, Kif food",
     "hours": "",
-    "instagram": "",
+    "instagram": "https://www.instagram.com/kiffood_navoiy/",
     "telegram": ""
   }
 }
