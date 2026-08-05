@@ -2,7 +2,8 @@
   "settings": {
     "name": "KIF Cake",
     "defaultTheme": "light",
-    "currency": "сум"
+    "currency": "сум",
+    "tabletQr": false
   },
   "categories": [
     {
