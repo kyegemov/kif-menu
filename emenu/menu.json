@@ -2,7 +2,10 @@
   "settings": {
     "name": "KIF Cake",
     "defaultTheme": "light",
-    "currency": "сум"
+    "currency": "сум",
+    "brand": {
+      "logo": "images-webp/brand-logo.png?v=1786002875330"
+    }
   },
   "categories": [
     {
@@ -1071,36 +1074,35 @@
   "landing": {
     "name": "KIF Cake",
     "eyebrow": {
-      "uz_lat": "RESTORAN",
       "ru": "РЕСТОРАН",
+      "uz_lat": "RESTORAN",
       "uz_cyr": "РЕСТОРАН"
     },
     "tagline": {
-      "uz_lat": "Lazzat va shinamlik!",
       "ru": "Вкус и уют!",
+      "uz_lat": "Lazzat va shinamlik!",
       "uz_cyr": "Лаззат ва шинамлик!"
     },
     "hero_image": "",
-    "hide_hero_image": false,
     "hero_caption": {
-      "uz_lat": "Bijrlab turadigan ta'm!",
       "ru": "Вкус, который остаётся!",
+      "uz_lat": "Bijrlab turadigan ta'm!",
       "uz_cyr": "Бижирлаб турадиган таъм!"
     },
     "badge": {
       "line1": {
-        "uz_lat": "Navoiyda",
         "ru": "В Навои",
+        "uz_lat": "Navoiyda",
         "uz_cyr": "Навоийда"
       },
       "line2": {
-        "uz_lat": "Bijir Bijir",
         "ru": "Особое",
+        "uz_lat": "Bijir Bijir",
         "uz_cyr": "Бижир Бижир"
       },
       "line3": {
-        "uz_lat": "TAOMI",
         "ru": "БЛЮДО",
+        "uz_lat": "TAOMI",
         "uz_cyr": "ТАОМИ"
       }
     },
@@ -1187,36 +1189,36 @@
       "instagram_url": "https://www.instagram.com/kiffood_navoiy/",
       "telegram_url": "",
       "instagram_label": {
-        "uz_lat": "Instagram'da bizni kuzating",
         "ru": "Подпишитесь на Instagram",
+        "uz_lat": "Instagram'da bizni kuzating",
         "uz_cyr": "Instagram'да бизни кузатинг"
       },
       "phone_label": {
-        "uz_lat": "Qo'ng'iroq qilish",
         "ru": "Позвонить",
+        "uz_lat": "Qo'ng'iroq qilish",
         "uz_cyr": "Қўнғироқ қилиш"
       },
       "address": {
-        "uz_lat": "Navoiy, Kif food",
         "ru": "Навои, Узбекистан, улица 247",
+        "uz_lat": "Navoiy, Kif food",
         "uz_cyr": "Навоий, Ўзбекистон, кўча 247"
       }
     },
     "booking_cta": {
       "title": {
-        "uz_lat": "Stol band qilish",
         "ru": "Забронировать стол",
+        "uz_lat": "Stol band qilish",
         "uz_cyr": "Стол банд қилиш"
       },
       "subtitle": {
-        "uz_lat": "Tez va oson bron qiling",
         "ru": "Быстро и просто",
+        "uz_lat": "Tez va oson bron qiling",
         "uz_cyr": "Тез ва осон брон қилинг"
       }
     },
     "gallery_title": {
-      "uz_lat": "Bizning muhitimiz",
       "ru": "Наша атмосфера",
+      "uz_lat": "Bizning muhitimiz",
       "uz_cyr": "Бизнинг муҳитимиз"
     },
     "gallery": [
@@ -1280,8 +1282,8 @@
       }
     ],
     "footer_tagline": {
-      "uz_lat": "Lazzat, shinamlik va unutilmas lahzalar maskani!",
       "ru": "Вкус, уют и незабываемые моменты!",
+      "uz_lat": "Lazzat, shinamlik va unutilmas lahzalar maskani!",
       "uz_cyr": "Лаззат, шинамлик ва унутилмас лаҳзалар маскани!"
     },
     "hide_features_top": false,
@@ -1289,7 +1291,8 @@
     "hide_contacts": false,
     "hide_booking": false,
     "hide_gallery": false,
-    "hide_features_bottom": false
+    "hide_features_bottom": false,
+    "hide_hero_image": false
   },
   "restaurant": {
     "name": "",
