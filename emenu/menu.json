@@ -552,7 +552,7 @@
           "badges": []
         }
       ],
-      "categoryImage": "images-webp/cat_0.webp"
+      "categoryImage": "images-webp/cat_0.jpg"
     },
     {
       "name": "Кухня",
@@ -808,7 +808,8 @@
           "badges": []
         }
       ],
-      "sections": []
+      "sections": [],
+      "categoryImage": "images-webp/cat_1.jpg"
     },
     {
       "name": "Салат",
@@ -943,7 +944,8 @@
           "hidden": false,
           "badges": []
         }
-      ]
+      ],
+      "categoryImage": "images-webp/cat_2.jpg"
     },
     {
       "name": "Роллы",
