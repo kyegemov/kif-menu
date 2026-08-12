@@ -349,14 +349,10 @@ body{background:#E9E4F5;font-family:var(--sans);color:var(--dark)}
 }
 .card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(23,18,38,.09);border-color:rgba(124,92,255,.35)}
 .card:active{transform:scale(.985)}
-/* Фото блюда — ЦЕЛИКОМ, без обрезки: снимок вписывается в рамку (contain),
-   а поля закрывает его же размытая копия. Так не режется ни тарелка, ни
-   подпись на фото, и при этом сетка остаётся ровной. */
-.cimg{width:100%;aspect-ratio:1/1;height:auto;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--accent-soft);position:relative}
-.cimg-bg{
-  position:absolute;inset:0;background-size:cover;background-position:center;
-  filter:blur(14px) saturate(1.1);transform:scale(1.3);opacity:.55;
-}
+/* Фото блюда — ЦЕЛИКОМ, без обрезки (contain). Поля вокруг снимка заливаются
+   чёрным или белым — что ближе к краям самого фото (см. fitBg): на тёмном
+   снимке кадр продолжается в чёрное, на светлом — в белое, границы не видно. */
+.cimg{width:100%;aspect-ratio:1/1;height:auto;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--accent-soft);position:relative;transition:background-color .2s}
 .cimg img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain}
 .cimg-ph{font-size:34px;opacity:.35}
 .cimg.noimg img{display:none}
@@ -392,10 +388,7 @@ body{background:#E9E4F5;font-family:var(--sans);color:var(--dark)}
 .sheet-imgwrap{
   position:relative;width:100%;aspect-ratio:1/1;max-height:54vh;overflow:hidden;
   background:var(--accent-soft);display:flex;align-items:center;justify-content:center;
-}
-.sheet-bg{
-  position:absolute;inset:0;background-size:cover;background-position:center;
-  filter:blur(22px) saturate(1.1);transform:scale(1.3);opacity:.5;
+  transition:background-color .2s;
 }
 .sheet-img{position:relative;z-index:1;max-width:100%;max-height:100%;object-fit:contain;display:block}
 .sheet-body{padding:18px 20px 26px}
@@ -1104,16 +1097,38 @@ function renderTagChips() {
   }));
 }
 
-// Кавычки/скобки в url(...) ломают CSS — вычищаем их перед подстановкой
-function cssUrl(s) { return String(s || '').replace(/["'()\\\s]/g, ''); }
+// Подбор фона под фото: смотрим на ЯРКОСТЬ КРАЁВ снимка (именно они граничат с
+// полем) и заливаем поле чёрным или белым — кадр как будто продолжается.
+// Кросс-доменное фото прочитать нельзя (canvas «портится») — тогда молча
+// оставляем фон по умолчанию.
+function fitBg(img) {
+  try {
+    const S = 20;
+    const c = document.createElement('canvas');
+    c.width = S; c.height = S;
+    const ctx = c.getContext('2d', { willReadFrequently: true });
+    ctx.drawImage(img, 0, 0, S, S);
+    const d = ctx.getImageData(0, 0, S, S).data;
+    let sum = 0, n = 0;
+    for (let y = 0; y < S; y++) {
+      for (let x = 0; x < S; x++) {
+        if (x > 1 && x < S - 2 && y > 1 && y < S - 2) continue;   // только рамка по краю
+        const i = (y * S + x) * 4;
+        sum += 0.2126 * d[i] + 0.7152 * d[i + 1] + 0.0722 * d[i + 2];
+        n++;
+      }
+    }
+    const host = img.parentNode;
+    if (host && n) host.style.background = (sum / n) > 140 ? '#ffffff' : '#000000';
+  } catch (_e) { /* фото с другого домена — оставляем фон как есть */ }
+}
 
 function cardHTML(item, catName) {
   const badge = item.badges && item.badges[0]
     ? `<span class="cbadge">${esc(badgeLabel(item.badges[0]))}</span>` : '';
   const src = imgUrl(item.image);
   const img = src
-    ? `<span class="cimg-bg" style="background-image:url('${cssUrl(src)}')"></span>` +
-      `<img src="${esc(src)}" alt="${esc(item.title)}" loading="lazy" onerror="this.onerror=null;this.parentNode.classList.add('noimg')">`
+    ? `<img src="${esc(src)}" alt="${esc(item.title)}" loading="lazy" onload="fitBg(this)" onerror="this.onerror=null;this.parentNode.classList.add('noimg')">`
     : '';
   return `<button class="card" type="button" data-cat="${esc(catName)}" data-id="${esc(item.id)}">
     <span class="cimg${src ? '' : ' noimg'}">${img}</span>
@@ -1262,8 +1277,7 @@ function openDish(catName, id) {
   sheet.innerHTML =
     `<div class="sheet-grip"></div>
      ${src ? `<div class="sheet-imgwrap">
-       <div class="sheet-bg" style="background-image:url('${cssUrl(src)}')"></div>
-       <img class="sheet-img" src="${esc(src)}" alt="${esc(item.title)}" onerror="this.parentNode.style.display='none'">
+       <img class="sheet-img" src="${esc(src)}" alt="${esc(item.title)}" onload="fitBg(this)" onerror="this.parentNode.style.display='none'">
      </div>` : ''}
      <div class="sheet-body">
        ${badges ? `<div class="sheet-badges">${badges}</div>` : ''}
