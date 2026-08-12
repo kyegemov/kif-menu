@@ -615,31 +615,11 @@
           "badges": []
         },
         {
-          "id": "f88fddf2-e2be-41a5-953e-b46e88b504db",
-          "title": "Круассан бургер говяжий 1шт",
-          "description": "",
-          "price": 50000,
-          "image": "images-webp/1780131163366.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
           "id": "05b3973f-25f4-4273-81a0-2af5ef321233",
           "title": "Круассан бургер куриный 1шт",
           "description": "",
           "price": 35000,
           "image": "images-webp/1780053247645.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "588880b9-0bee-498e-aa5c-e519ed30ec04",
-          "title": "Бургер говяжий 1шт",
-          "description": "",
-          "price": 35000,
-          "image": "images-webp/1782214595400.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -1186,6 +1166,31 @@
           "description": "",
           "price": 75000,
           "image": "images-webp/1782294823026.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        }
+      ]
+    },
+    {
+      "name": "Фаст Фуд",
+      "items": [
+        {
+          "id": "588880b9-0bee-498e-aa5c-e519ed30ec04",
+          "title": "Бургер говяжий 1шт",
+          "description": "",
+          "price": 35000,
+          "image": "images-webp/1782214595400.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "f88fddf2-e2be-41a5-953e-b46e88b504db",
+          "title": "Круассан бургер говяжий 1шт",
+          "description": "",
+          "price": 50000,
+          "image": "images-webp/1780131163366.jpg",
           "available": true,
           "hidden": false,
           "badges": []
