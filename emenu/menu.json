@@ -2,10 +2,7 @@
   "settings": {
     "name": "KIF Cake",
     "defaultTheme": "light",
-    "currency": "сум",
-    "brand": {
-      "logo": "images-webp/brand-logo.png?v=1786002875330"
-    }
+    "currency": "сум"
   },
   "categories": [
     {
@@ -26,7 +23,7 @@
           "title": "Кофе Espesso",
           "description": "",
           "price": 18000,
-          "image": "images-webp/1780041612141.jpg",
+          "image": "images-webp/1782219165413.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -36,7 +33,7 @@
           "title": "Кофе Americano",
           "description": "",
           "price": 18000,
-          "image": "images-webp/1780041625639.jpg",
+          "image": "images-webp/1782219172415.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -46,7 +43,7 @@
           "title": "Кофе Cappuccino",
           "description": "",
           "price": 20000,
-          "image": "images-webp/1780041638923.jpg",
+          "image": "images-webp/1782295402914.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -56,7 +53,7 @@
           "title": "Кофе Flet Uayt",
           "description": "",
           "price": 25000,
-          "image": "images-webp/1780050992841.jpg",
+          "image": "images-webp/1782295414395.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -66,7 +63,7 @@
           "title": "Кофе Latte",
           "description": "",
           "price": 20000,
-          "image": "images-webp/1780041664774.jpg",
+          "image": "images-webp/1782295421048.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -76,7 +73,7 @@
           "title": "Kakao Marshmello",
           "description": "",
           "price": 30000,
-          "image": "images-webp/1780041686327.jpg",
+          "image": "images-webp/1782295429297.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -86,7 +83,7 @@
           "title": "Кофе Glyasse",
           "description": "",
           "price": 30000,
-          "image": "images-webp/1780041750402.jpg",
+          "image": "images-webp/1782295436411.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -96,17 +93,7 @@
           "title": "Кофе Raf",
           "description": "",
           "price": 35000,
-          "image": "images-webp/1780051015050.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "828492e0-f0f5-4fe4-9fdd-d0e21d7a0bd8",
-          "title": "Milkshake Vanil ",
-          "description": "",
-          "price": 25000,
-          "image": "images-webp/1780132177980.jpg",
+          "image": "images-webp/1782295444901.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -116,47 +103,7 @@
           "title": "Milkshake Strawberry ",
           "description": "",
           "price": 25000,
-          "image": "images-webp/1780132182488.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "4fe3615f-30a8-4668-a73f-46b55e6d4506",
-          "title": "Milkshake Malina ",
-          "description": "",
-          "price": 25000,
-          "image": "images-webp/1780132187677.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "197a99a4-efad-449f-a6d8-bb95fa4c5aa0",
-          "title": "Milkshake Banan ",
-          "description": "",
-          "price": 25000,
-          "image": "images-webp/1780132201164.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "f6f89e8e-5ea1-49d2-a408-da48dbdad5ed",
-          "title": "Milkshake BabL Gam ",
-          "description": "",
-          "price": 25000,
-          "image": "images-webp/1780132225183.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "9b5f8b40-727d-42ab-9a91-a969253b8c05",
-          "title": "Milkshake Mango ",
-          "description": "",
-          "price": 25000,
-          "image": "images-webp/1780132234026.jpg",
+          "image": "images-webp/1782295473975.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -166,27 +113,17 @@
           "title": "Milkshake Cokolad ",
           "description": "",
           "price": 25000,
-          "image": "images-webp/1780132249266.jpg",
+          "image": "images-webp/1782295535651.jpg",
           "available": true,
           "hidden": false,
           "badges": []
         },
         {
           "id": "fc1e549f-cc9e-422b-96a1-0cc098f990bf",
-          "title": "Milkshake Apelsin ",
+          "title": "Мохито Окиан",
           "description": "",
-          "price": 25000,
-          "image": "images-webp/1780132265103.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "b38479aa-4abe-422b-8fd9-0a88445148f1",
-          "title": "Milkshake Karamel ",
-          "description": "",
-          "price": 25000,
-          "image": "images-webp/1780132280433.jpg",
+          "price": 20000,
+          "image": "images-webp/1782295624405.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -196,7 +133,7 @@
           "title": "Kokteyl Moxito ",
           "description": "",
           "price": 20000,
-          "image": "images-webp/1780913224511.jpg",
+          "image": "images-webp/1782295647984.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -206,7 +143,7 @@
           "title": "Kokteyl Moxito Grafin ",
           "description": "",
           "price": 45000,
-          "image": "images-webp/1780913244322.jpg",
+          "image": "images-webp/1782295659427.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -216,7 +153,7 @@
           "title": "Kokteyl Krasniy Apelsin ",
           "description": "",
           "price": 30000,
-          "image": "images-webp/1780913301581.jpg",
+          "image": "images-webp/1782295685556.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -226,7 +163,7 @@
           "title": "Kokteyl Golubuyu Laguna ",
           "description": "",
           "price": 30000,
-          "image": "images-webp/1780913335958.jpg",
+          "image": "images-webp/1782295693794.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -236,7 +173,7 @@
           "title": "Kokteyl Cherry Sprits ",
           "description": "",
           "price": 30000,
-          "image": "images-webp/1780913380505.jpg",
+          "image": "images-webp/1782295702877.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -246,7 +183,7 @@
           "title": "Kokteyl Limonello ",
           "description": "",
           "price": 30000,
-          "image": "images-webp/1780913445725.jpg",
+          "image": "images-webp/1782295726079.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -256,7 +193,7 @@
           "title": "Kokteyl Lavandoviy Shpris ",
           "description": "",
           "price": 50000,
-          "image": "images-webp/1780913500400.jpg",
+          "image": "images-webp/1782295749331.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -266,7 +203,7 @@
           "title": "Kokteyl Tropik ",
           "description": "",
           "price": 40000,
-          "image": "images-webp/1780913563766.jpg",
+          "image": "images-webp/1782295739373.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -276,7 +213,7 @@
           "title": "Kokteyl Nochnoy Energetik ",
           "description": "",
           "price": 40000,
-          "image": "logo.png",
+          "image": "images-webp/1782295774773.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -286,7 +223,7 @@
           "title": "Moxito Strawberry ",
           "description": "",
           "price": 20000,
-          "image": "images-webp/1780913748283.jpg",
+          "image": "images-webp/1782295783412.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -296,7 +233,7 @@
           "title": "Moxito Malina ",
           "description": "",
           "price": 20000,
-          "image": "images-webp/1780913837816.jpg",
+          "image": "images-webp/1782295793488.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -306,7 +243,7 @@
           "title": "Moxito Kiwi ",
           "description": "",
           "price": 20000,
-          "image": "images-webp/1780913975207.jpg",
+          "image": "images-webp/1782295799491.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -316,7 +253,7 @@
           "title": "Moxito Apelsin ",
           "description": "",
           "price": 20000,
-          "image": "images-webp/1780914043615.jpg",
+          "image": "images-webp/1782295812881.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -326,7 +263,7 @@
           "title": "Moxito Mango Marakuya ",
           "description": "",
           "price": 20000,
-          "image": "images-webp/1780914072344.jpg",
+          "image": "images-webp/1782295821766.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -336,7 +273,7 @@
           "title": "Мятный Фраппучино ",
           "description": "",
           "price": 30000,
-          "image": "images-webp/1780914118550.jpg",
+          "image": "images-webp/1782295971769.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -346,7 +283,7 @@
           "title": "Бамбл кофе ",
           "description": "",
           "price": 70000,
-          "image": "images-webp/1780914210175.jpg",
+          "image": "images-webp/1782295996745.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -356,7 +293,7 @@
           "title": "Айс Латте с карамелью ",
           "description": "",
           "price": 30000,
-          "image": "images-webp/1780914324123.jpg",
+          "image": "images-webp/1782296033207.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -366,7 +303,7 @@
           "title": "Клубничный айс матча ",
           "description": "",
           "price": 60000,
-          "image": "images-webp/1780914425560.jpg",
+          "image": "images-webp/1782296014833.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -376,7 +313,7 @@
           "title": "Пацелуй дракона ",
           "description": "",
           "price": 55000,
-          "image": "images-webp/1780914468492.jpg",
+          "image": "images-webp/1782296026560.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -406,7 +343,7 @@
           "title": "Чай с малиной ",
           "description": "",
           "price": 25000,
-          "image": "images-webp/1780042073906.jpg",
+          "image": "images-webp/1782296037519.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -416,7 +353,7 @@
           "title": "Чай с апельсиновый ",
           "description": "",
           "price": 25000,
-          "image": "images-webp/1780042084700.jpg",
+          "image": "images-webp/1782296057878.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -426,7 +363,7 @@
           "title": "Чай с лимоном ",
           "description": "",
           "price": 15000,
-          "image": "images-webp/1780914620734.jpg",
+          "image": "images-webp/1782296113682.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -436,7 +373,7 @@
           "title": "Чай с имбирем ",
           "description": "",
           "price": 55000,
-          "image": "images-webp/1780051110197.jpg",
+          "image": "images-webp/1782296067439.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -446,7 +383,7 @@
           "title": "Чай Бардак ",
           "description": "",
           "price": 25000,
-          "image": "images-webp/1780042105058.jpg",
+          "image": "images-webp/1782296136177.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -486,7 +423,7 @@
           "title": "Матча Зелёная ",
           "description": "",
           "price": 30000,
-          "image": "images-webp/1780051197675.jpg",
+          "image": "images-webp/1782296166973.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -496,17 +433,17 @@
           "title": "Матча Голубая ",
           "description": "",
           "price": 30000,
-          "image": "images-webp/1780051187609.jpg",
+          "image": "images-webp/1782296173530.jpg",
           "available": true,
           "hidden": false,
           "badges": []
         },
         {
           "id": "e6e49abd-3a02-4b83-abac-1511c87e3f9b",
-          "title": "Moxito Апельсин графин 1шт",
+          "title": "Матча Розовой",
           "description": "",
-          "price": 45000,
-          "image": "images-webp/1780914665344.jpg",
+          "price": 30000,
+          "image": "images-webp/1782296244796.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -516,7 +453,7 @@
           "title": "Moxito клубника графин 1шт",
           "description": "",
           "price": 45000,
-          "image": "images-webp/1780317256111.jpg",
+          "image": "images-webp/1782296253523.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -526,7 +463,7 @@
           "title": "Kokteyl Moxito графин 1шт",
           "description": "",
           "price": 45000,
-          "image": "images-webp/1780317306975.jpg",
+          "image": "images-webp/1782296282197.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -550,143 +487,93 @@
           "available": true,
           "hidden": false,
           "badges": []
+        },
+        {
+          "id": "fb6e1e21-21ea-4888-9faa-07db1edb6a08",
+          "title": "Мохито Манго маракуй",
+          "description": "",
+          "price": 45000,
+          "image": "images-webp/1782296343056.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "bad91cce-2693-46f5-ae4f-0395e4c634d4",
+          "title": "Айс Матча Манго-маракуя",
+          "description": "",
+          "price": 60000,
+          "image": "images-webp/1782297963405.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "21fe8940-4a36-415b-b3e7-ff850ca5a5b7",
+          "title": "Айс Матча  Ягодный",
+          "description": "",
+          "price": 60000,
+          "image": "images-webp/1782298128625.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "ca9992e8-f671-4b64-ba36-8c8b023c7535",
+          "title": "Coca Cola 1l",
+          "description": "",
+          "price": 13000,
+          "image": "images-webp/1785225056451.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "2cf92013-e4fa-4411-b8b1-d60c17547ab9",
+          "title": "",
+          "description": "",
+          "price": 20000,
+          "image": "images-webp/1786275312580.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "093d3de7-331d-4cca-9d26-97320bddbe0e",
+          "title": "",
+          "description": "",
+          "price": 20000,
+          "image": "images-webp/1786275353615.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "62f182b7-fe37-4dd2-b0f6-9e79563b5ed7",
+          "title": "",
+          "description": "",
+          "price": 15000,
+          "image": "images-webp/1786275379768.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "0f3cb862-4e28-4ba1-afd1-2b639c0ff1cd",
+          "title": "",
+          "description": "",
+          "price": 13000,
+          "image": "images-webp/1786275394296.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
         }
       ],
-      "categoryImage": "images-webp/cat_0.jpg"
+      "categoryImage": "images-webp/cat_0.webp"
     },
     {
       "name": "Кухня",
       "items": [
-        {
-          "id": "820d519b-12d7-472f-8f4a-3462f0bff907",
-          "title": "Яйичница",
-          "description": "порция",
-          "price": 15000,
-          "image": "images-webp/1779874928993.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "e327ea9a-2e26-4aa1-a5c3-bd914b48cb54",
-          "title": "Яйца с сосисками",
-          "description": "порция",
-          "price": 20000,
-          "image": "images-webp/1779874995211.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "59c13cbd-c062-4bee-8f54-ec9ac4bc0311",
-          "title": "Омлет с зеленью",
-          "description": "порция",
-          "price": 25000,
-          "image": "images-webp/1779875091563.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "b8ec7a42-defa-4a66-b217-f4765a117d29",
-          "title": "Омлет по  Турецкий",
-          "description": "порция",
-          "price": 32000,
-          "image": "images-webp/1779879434327.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "63a9454d-429a-41ce-aea7-a76f995e0c1e",
-          "title": "Шак Шука 1 порция",
-          "description": "",
-          "price": 28000,
-          "image": "images-webp/1779965806188.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "a500ddde-9bfc-460a-a6a7-5858f108227c",
-          "title": "Блины порция (3шт)",
-          "description": "",
-          "price": 10000,
-          "image": "images-webp/1779965895593.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "16a47151-f67f-4d67-bb3d-2975ad3859cb",
-          "title": "Сырники 1 порция ",
-          "description": "",
-          "price": 25000,
-          "image": "images-webp/1779965983384.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "4859a41c-0642-4cb1-8b37-4b0534bb8df9",
-          "title": "Каша овсянная 1 порция",
-          "description": "",
-          "price": 15000,
-          "image": "images-webp/1780130931795.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "d38c108d-34e1-40fe-8b31-cae9acaab066",
-          "title": "Блинчик с творогом 1шт",
-          "description": "",
-          "price": 8000,
-          "image": "images-webp/1779966092490.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "3fb198ee-4217-4fd4-91ba-4cae1d9fdf28",
-          "title": "Блинчик с мясом 1шт",
-          "description": "",
-          "price": 12000,
-          "image": "images-webp/1779966154719.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "b886ffbd-4b5a-45fa-b222-848a2c31d86a",
-          "title": "Рис 1 порция",
-          "description": "",
-          "price": 12000,
-          "image": "images-webp/1780312353419.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "74672c33-c1a8-4171-8829-e6d946fbca1c",
-          "title": "Пюре 1 порция",
-          "description": "",
-          "price": 12000,
-          "image": "images-webp/1780312369557.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "f136fd62-5c9d-464e-bb24-c120ccb0fc1f",
-          "title": "Гречка 1 порция",
-          "description": "",
-          "price": 12000,
-          "image": "images-webp/1780312384276.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
         {
           "id": "86ccf7e8-f82b-4820-b4d7-1b3eca7aa1fa",
           "title": "Молодой картошка отворное 1 порция ",
@@ -722,17 +609,7 @@
           "title": "Олот сомса 1шт",
           "description": "",
           "price": 8000,
-          "image": "images-webp/1780131026542.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "d717e573-285c-4aa6-8f8b-4c4f3977d49b",
-          "title": "Чапати бургер говяжи 1шт",
-          "description": "",
-          "price": 40000,
-          "image": "images-webp/1780131077610.jpg",
+          "image": "images-webp/1782213959353.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -743,16 +620,6 @@
           "description": "",
           "price": 50000,
           "image": "images-webp/1780131163366.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "ac0ddc30-f634-4475-8e46-5f07e0f46856",
-          "title": "Чапати бургер куриный 1шт",
-          "description": "",
-          "price": 25000,
-          "image": "images-webp/1780131085443.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -772,7 +639,7 @@
           "title": "Бургер говяжий 1шт",
           "description": "",
           "price": 35000,
-          "image": "images-webp/1780131114243.jpg",
+          "image": "images-webp/1782214595400.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -782,7 +649,7 @@
           "title": "Бургер куриный 1шт",
           "description": "",
           "price": 25000,
-          "image": "images-webp/1780131123238.jpg",
+          "image": "images-webp/1782214585244.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -792,7 +659,7 @@
           "title": "Хот Дог с говяжьей котлетой 1шт",
           "description": "",
           "price": 30000,
-          "image": "images-webp/1780053104403.jpg",
+          "image": "images-webp/1782214683615.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -802,44 +669,53 @@
           "title": "Хот Дог с куриной котлет 1шт",
           "description": "",
           "price": 20000,
-          "image": "images-webp/1780053095524.jpg",
+          "image": "images-webp/1782214592413.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "b2487781-5c8d-4072-9ba0-2288cf5b2c0d",
+          "title": "Сомса KiF Фитча олот 1шт",
+          "description": "",
+          "price": 18000,
+          "image": "images-webp/1782297147295.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "8dade6d4-9e1e-46cf-b8ad-d09ffeb8ae43",
+          "title": "Пельмени запечённые 1 порция",
+          "description": "",
+          "price": 35000,
+          "image": "images-webp/1782297240857.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "9a7eed31-9eb2-4ca8-8774-9115fcb841a3",
+          "title": "Пельмени отварные 1портця",
+          "description": "",
+          "price": 30000,
+          "image": "images-webp/1782297249051.jpg",
           "available": true,
           "hidden": false,
           "badges": []
         }
       ],
-      "sections": [],
-      "categoryImage": "images-webp/cat_1.jpg"
+      "sections": []
     },
     {
       "name": "Салат",
       "items": [
         {
-          "id": "fb1d9574-4009-429a-aa45-04c03c354c54",
-          "title": "Салат Свекольный 1порция ",
-          "description": "",
-          "price": 15000,
-          "image": "images-webp/1780130882045.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "adaa117a-4abd-40e3-a5d8-56d11dce9403",
-          "title": "Салат Гречский 1 порция ",
-          "description": "",
-          "price": 40000,
-          "image": "images-webp/1780044156756.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
           "id": "2e0c4ffd-90ae-4597-a742-febc88b64918",
           "title": "Салат Оливе 1 порция",
           "description": "",
-          "price": 20000,
-          "image": "images-webp/1780044190711.jpg",
+          "price": 30000,
+          "image": "images-webp/1782212677686.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -849,7 +725,7 @@
           "title": "Салат Помидор с луком 1 порция",
           "description": "",
           "price": 15000,
-          "image": "images-webp/1780044206368.jpg",
+          "image": "images-webp/1782212785713.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -869,7 +745,7 @@
           "title": "Салат Ферменной KiF 1порция",
           "description": "",
           "price": 30000,
-          "image": "images-webp/1780130786288.jpg",
+          "image": "images-webp/1782212750571.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -878,8 +754,8 @@
           "id": "1c1a6226-3764-4631-bebb-13f99850f7b2",
           "title": "Салат Хрустящий баклажан 1 порция",
           "description": "",
-          "price": 25000,
-          "image": "images-webp/1780044344325.jpg",
+          "price": 30000,
+          "image": "images-webp/1782212777749.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -889,7 +765,7 @@
           "title": "Салат Цезар курицей 1 порция",
           "description": "",
           "price": 40000,
-          "image": "images-webp/1780044381437.jpg",
+          "image": "images-webp/1782213343573.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -899,17 +775,7 @@
           "title": "Салат Цезар с креветками 1 порция",
           "description": "",
           "price": 55000,
-          "image": "images-webp/1780130824150.jpg",
-          "available": true,
-          "hidden": false,
-          "badges": []
-        },
-        {
-          "id": "3139398e-2e69-4a80-be3b-f1a821518f2d",
-          "title": "Салат Мимоза с говядина сыром 1 порция",
-          "description": "",
-          "price": 32000,
-          "image": "images-webp/1780044425348.jpg",
+          "image": "images-webp/1782212836440.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -919,7 +785,7 @@
           "title": "Салат Сетсиля 1 порция",
           "description": "",
           "price": 30000,
-          "image": "images-webp/1780130858968.jpg",
+          "image": "images-webp/1782212880878.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -929,7 +795,7 @@
           "title": "Салат Дачный 1 порция",
           "description": "",
           "price": 25000,
-          "image": "images-webp/1780044805724.jpg",
+          "image": "images-webp/1782212910774.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -943,9 +809,18 @@
           "available": true,
           "hidden": false,
           "badges": []
+        },
+        {
+          "id": "adaa117a-4abd-40e3-a5d8-56d11dce9403",
+          "title": "Салат Гречский 1 порция ",
+          "description": "",
+          "price": 40000,
+          "image": "images-webp/1782212646901.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
         }
-      ],
-      "categoryImage": "images-webp/cat_2.jpg"
+      ]
     },
     {
       "name": "Роллы",
@@ -955,7 +830,7 @@
           "title": "Роллы горячие с тунцом порция 8 шт",
           "description": "",
           "price": 50000,
-          "image": "images-webp/1780919009539.jpg",
+          "image": "images-webp/1782211800627.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -965,7 +840,7 @@
           "title": "Роллы горячие с угрем порция 8 шт",
           "description": "",
           "price": 55000,
-          "image": "images-webp/1780919081412.jpg",
+          "image": "images-webp/1782212290430.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -975,7 +850,7 @@
           "title": "Роллы горячие с лососем порция 8 шт",
           "description": "",
           "price": 60000,
-          "image": "images-webp/1780919156609.jpg",
+          "image": "images-webp/1782212037411.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -985,7 +860,7 @@
           "title": "Роллы Вулкан порция 6 шт",
           "description": "",
           "price": 50000,
-          "image": "images-webp/1780312647875.jpg",
+          "image": "images-webp/1782212062202.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -995,7 +870,7 @@
           "title": "Роллы Филадельфия масаго порция 8шт",
           "description": "",
           "price": 70000,
-          "image": "images-webp/1780312632533.jpg",
+          "image": "images-webp/1782212101937.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -1005,7 +880,7 @@
           "title": "Роллы с тунцом порция 8шт",
           "description": "",
           "price": 55000,
-          "image": "images-webp/1780919273109.jpg",
+          "image": "images-webp/1782212127434.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -1015,7 +890,7 @@
           "title": "Роллы с зеленю с тунцом и угрем порция 8шт",
           "description": "",
           "price": 60000,
-          "image": "images-webp/1780312587271.jpg",
+          "image": "images-webp/1782211116871.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -1025,7 +900,7 @@
           "title": "Роллы Калифорния с креветками порция 8шт",
           "description": "",
           "price": 70000,
-          "image": "images-webp/1780312545581.jpg",
+          "image": "images-webp/1782212185942.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -1035,7 +910,7 @@
           "title": "Роллы Калифорния с крабом порция 8шт",
           "description": "",
           "price": 55000,
-          "image": "images-webp/1780312532285.jpg",
+          "image": "images-webp/1782212235332.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -1045,7 +920,7 @@
           "title": "Роллы Калифорния с ласосем поция 8шт",
           "description": "",
           "price": 70000,
-          "image": "images-webp/1780131685158.jpg",
+          "image": "images-webp/1782212245688.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -1055,7 +930,7 @@
           "title": "Роллы Филадельфия порция 8шт",
           "description": "",
           "price": 75000,
-          "image": "images-webp/1780131660181.jpg",
+          "image": "images-webp/1782212238312.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -1065,7 +940,252 @@
           "title": "Роллы Канада порция 8шт",
           "description": "",
           "price": 75000,
-          "image": "images-webp/1780131645142.jpg",
+          "image": "images-webp/1782212256641.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        }
+      ]
+    },
+    {
+      "name": "Завтрак",
+      "items": [
+        {
+          "id": "820d519b-12d7-472f-8f4a-3462f0bff907",
+          "title": "Яйичница",
+          "description": "порция",
+          "price": 20000,
+          "image": "images-webp/1782215057985.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "e327ea9a-2e26-4aa1-a5c3-bd914b48cb54",
+          "title": "Яйца с сосисками",
+          "description": "порция",
+          "price": 20000,
+          "image": "images-webp/1782213595229.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "59c13cbd-c062-4bee-8f54-ec9ac4bc0311",
+          "title": "Омлет с зеленью",
+          "description": "порция",
+          "price": 25000,
+          "image": "images-webp/1782213606396.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "b8ec7a42-defa-4a66-b217-f4765a117d29",
+          "title": "Омлет по  Турецкий",
+          "description": "порция",
+          "price": 35000,
+          "image": "images-webp/1779879434327.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "63a9454d-429a-41ce-aea7-a76f995e0c1e",
+          "title": "Шак Шука 1 порция",
+          "description": "",
+          "price": 33000,
+          "image": "images-webp/1782213582585.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "a500ddde-9bfc-460a-a6a7-5858f108227c",
+          "title": "Блины порция  1шт",
+          "description": "",
+          "price": 9000,
+          "image": "images-webp/1782213746324.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "16a47151-f67f-4d67-bb3d-2975ad3859cb",
+          "title": "Сырники 1 порция ",
+          "description": "",
+          "price": 35000,
+          "image": "images-webp/1782213754793.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "4859a41c-0642-4cb1-8b37-4b0534bb8df9",
+          "title": "Каша овсянная 1 порция",
+          "description": "",
+          "price": 20000,
+          "image": "images-webp/1782213765135.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "d38c108d-34e1-40fe-8b31-cae9acaab066",
+          "title": "Блинчик с творогом 1шт",
+          "description": "",
+          "price": 15000,
+          "image": "images-webp/1782213847955.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "3fb198ee-4217-4fd4-91ba-4cae1d9fdf28",
+          "title": "Блинчик с мясом 1шт",
+          "description": "",
+          "price": 25000,
+          "image": "images-webp/1782213857899.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "bd319b1b-1b5b-42f7-a343-fe39f57a233f",
+          "title": "Блинчики с нутеллой и свежими ягодами 1шт ",
+          "description": "",
+          "price": 25000,
+          "image": "images-webp/1783506690038.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        }
+      ]
+    },
+    {
+      "name": "Раздача",
+      "items": [
+        {
+          "id": "b886ffbd-4b5a-45fa-b222-848a2c31d86a",
+          "title": "Рис 1 порция",
+          "description": "",
+          "price": 12000,
+          "image": "images-webp/1780312353419.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "74672c33-c1a8-4171-8829-e6d946fbca1c",
+          "title": "Пюре 1 порция",
+          "description": "",
+          "price": 12000,
+          "image": "images-webp/1780312369557.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "f136fd62-5c9d-464e-bb24-c120ccb0fc1f",
+          "title": "Гречка 1 порция",
+          "description": "",
+          "price": 12000,
+          "image": "images-webp/1780312384276.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "fb1d9574-4009-429a-aa45-04c03c354c54",
+          "title": "Салат Свекольный 1порция ",
+          "description": "",
+          "price": 15000,
+          "image": "images-webp/1780130882045.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "5b25b73b-e237-45c6-a388-672e4781cfc1",
+          "title": "Бифштекс из говядины 1 порция ",
+          "description": "",
+          "price": 35000,
+          "image": "images-webp/1782297156696.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "bd158cce-27f9-4532-bbff-70e04ddc8aff",
+          "title": "Бифштекс из курыцы 1 порция ",
+          "description": "",
+          "price": 30000,
+          "image": "images-webp/1782297229047.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        }
+      ]
+    },
+    {
+      "name": "Пицца",
+      "items": [
+        {
+          "id": "03f9b162-ffb7-43d1-8c6a-0125f52912d0",
+          "title": "Пицца Мясная 1шт",
+          "description": "",
+          "price": 110000,
+          "image": "images-webp/1782294695960.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "d50752a0-1362-4339-b723-fd1facb613ec",
+          "title": "Пицца пепперони 1шт",
+          "description": "",
+          "price": 65000,
+          "image": "images-webp/1782294750441.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "864f3980-d7ca-46a1-8586-36385c97617e",
+          "title": "Пицца Морская 1шт",
+          "description": "",
+          "price": 145000,
+          "image": "images-webp/1784208438784.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "e6c9a4e8-9650-436f-962a-89a1fcac8e16",
+          "title": "Пицца с курицей и грибами 1шт",
+          "description": "",
+          "price": 75000,
+          "image": "images-webp/1782294796799.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "70f7cd99-f6a8-4e54-9f7d-6360b927a7aa",
+          "title": "Пицца KiF Ассорти 1шт",
+          "description": "",
+          "price": 85000,
+          "image": "images-webp/1784208065126.jpg",
+          "available": true,
+          "hidden": false,
+          "badges": []
+        },
+        {
+          "id": "851f4382-7ad1-465b-a830-cc2cb0f27a13",
+          "title": "Пицца Четыре сыра 1шт",
+          "description": "",
+          "price": 75000,
+          "image": "images-webp/1782294823026.jpg",
           "available": true,
           "hidden": false,
           "badges": []
@@ -1116,39 +1236,39 @@
       {
         "icon": "chef",
         "title": {
-          "uz_lat": "Mualliflik taomlari",
           "ru": "Авторская кухня",
+          "uz_lat": "Mualliflik taomlari",
           "uz_cyr": "Муаллифлик таомлари"
         },
         "subtitle": {
-          "uz_lat": "Unutilmas ta'mlar",
           "ru": "Незабываемые вкусы",
+          "uz_lat": "Unutilmas ta'mlar",
           "uz_cyr": "Унутилмас таъмлар"
         }
       },
       {
         "icon": "heart",
         "title": {
-          "uz_lat": "Romantik muhit",
           "ru": "Романтическая атмосфера",
+          "uz_lat": "Romantik muhit",
           "uz_cyr": "Романтик муҳит"
         },
         "subtitle": {
-          "uz_lat": "Shinam va iliq atmosfera",
           "ru": "Уютно и тепло",
+          "uz_lat": "Shinam va iliq atmosfera",
           "uz_cyr": "Шинам ва илиқ атмосфера"
         }
       },
       {
         "icon": "music",
         "title": {
-          "uz_lat": "Jonli musiqa",
           "ru": "Живая музыка",
+          "uz_lat": "Jonli musiqa",
           "uz_cyr": "Жонли мусиқа"
         },
         "subtitle": {
-          "uz_lat": "Har kuni jonli ijro",
           "ru": "Каждый день",
+          "uz_lat": "Har kuni jonli ijro",
           "uz_cyr": "Ҳар куни жонли ижро"
         }
       }
@@ -1157,39 +1277,39 @@
       {
         "icon": "users",
         "value": "500+",
-        "stars": true,
         "label": {
-          "uz_lat": "mamnun mijozlar",
           "ru": "довольных гостей",
+          "uz_lat": "mamnun mijozlar",
           "uz_cyr": "мамнун мижозлар"
-        }
+        },
+        "stars": true
       },
       {
         "icon": "cake",
         "value": "10+",
-        "stars": false,
         "label": {
-          "uz_lat": "Har kuni\nbayramlar",
           "ru": "Каждый день\nпраздников",
+          "uz_lat": "Har kuni\nbayramlar",
           "uz_cyr": "Ҳар куни\nбайрамлар"
-        }
+        },
+        "stars": false
       },
       {
         "icon": "cheers",
         "value": "",
-        "stars": false,
         "label": {
-          "uz_lat": "Unutilmas\nlahzalar faqat KIF Cake'da",
           "ru": "Незабываемые\nмоменты только в KIF Cake",
+          "uz_lat": "Unutilmas\nlahzalar faqat KIF Cake'da",
           "uz_cyr": "Унутилмас\nлаҳзалар фақат KIF Cake'да"
-        }
+        },
+        "stars": false
       }
     ],
     "contacts": {
-      "phone": "+998883697007",
-      "phone_display": "+998 88 369 7007",
-      "instagram_url": "https://www.instagram.com/kiffood_navoiy/",
-      "telegram_url": "",
+      "phone": "+998970542222",
+      "phone_display": "+998 97 054 2222",
+      "instagram_url": "https://instagram.com/restone",
+      "telegram_url": "https://t.me/restone",
       "instagram_label": {
         "ru": "Подпишитесь на Instagram",
         "uz_lat": "Instagram'da bizni kuzating",
@@ -1202,7 +1322,7 @@
       },
       "address": {
         "ru": "Навои, Узбекистан, улица 247",
-        "uz_lat": "Navoiy, Kif food",
+        "uz_lat": "Navoiy, Uzbekistan street, 247",
         "uz_cyr": "Навоий, Ўзбекистон, кўча 247"
       }
     },
@@ -1233,52 +1353,52 @@
       {
         "icon": "tray",
         "title": {
-          "uz_lat": "To'fresh mahsulotlar",
           "ru": "Свежие продукты",
+          "uz_lat": "To'fresh mahsulotlar",
           "uz_cyr": "Тоза маҳсулотлар"
         },
         "subtitle": {
-          "uz_lat": "Sifat kafolati",
           "ru": "Гарантия качества",
+          "uz_lat": "Sifat kafolati",
           "uz_cyr": "Сифат кафолати"
         }
       },
       {
         "icon": "chef-hat",
         "title": {
-          "uz_lat": "Professional oshpazlar",
           "ru": "Профессиональные повара",
+          "uz_lat": "Professional oshpazlar",
           "uz_cyr": "Профессионал ошпазлар"
         },
         "subtitle": {
-          "uz_lat": "Yuksak mahorat",
           "ru": "Высокое мастерство",
+          "uz_lat": "Yuksak mahorat",
           "uz_cyr": "Юксак маҳорат"
         }
       },
       {
         "icon": "shield",
         "title": {
-          "uz_lat": "Xavfsiz va sifatli",
           "ru": "Безопасно и качественно",
+          "uz_lat": "Xavfsiz va sifatli",
           "uz_cyr": "Хавфсиз ва сифатли"
         },
         "subtitle": {
-          "uz_lat": "Siz uchun muhim",
           "ru": "Важно для вас",
+          "uz_lat": "Siz uchun muhim",
           "uz_cyr": "Сиз учун муҳим"
         }
       },
       {
         "icon": "heart",
         "title": {
-          "uz_lat": "Mehmonlarga mehr",
           "ru": "Забота о гостях",
+          "uz_lat": "Mehmonlarga mehr",
           "uz_cyr": "Меҳмонларга меҳр"
         },
         "subtitle": {
-          "uz_lat": "Bizning qadriyatimiz",
           "ru": "Наша ценность",
+          "uz_lat": "Bizning qadriyatimiz",
           "uz_cyr": "Бизнинг қадриятимиз"
         }
       }
@@ -1293,16 +1413,15 @@
     "hide_contacts": false,
     "hide_booking": false,
     "hide_gallery": false,
-    "hide_features_bottom": false,
-    "hide_hero_image": false
+    "hide_features_bottom": false
   },
   "restaurant": {
     "name": "",
     "description": "",
-    "phone": "+998883697007",
-    "address": "Navoi, Kif food",
+    "phone": "",
+    "address": "",
     "hours": "",
-    "instagram": "https://www.instagram.com/kiffood_navoiy/",
+    "instagram": "",
     "telegram": ""
   }
 }
