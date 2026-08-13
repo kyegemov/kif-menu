@@ -352,17 +352,19 @@ body{background:#E9E4F5;font-family:var(--sans);color:var(--dark)}
 /* Фото блюда — ЦЕЛИКОМ, без обрезки (contain). Поля вокруг снимка заливаются
    чёрным или белым — что ближе к краям самого фото (см. fitBg): на тёмном
    снимке кадр продолжается в чёрное, на светлом — в белое, границы не видно. */
-.cimg{width:100%;aspect-ratio:1/1;height:auto;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--accent-soft);position:relative;transition:background-color .2s}
+/* Главное в карточке — ФОТО: кадр вытянут по вертикали (4:5) и занимает ~три
+   четверти карточки, а подпись сжата до названия и цены. Описание не дублируем
+   в сетке — оно показывается, когда гость открывает блюдо. */
+.cimg{width:100%;aspect-ratio:4/5;height:auto;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--accent-soft);position:relative}
 .cimg img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain}
 .cimg-ph{font-size:34px;opacity:.35}
 .cimg.noimg img{display:none}
 .cimg.noimg::after{content:'';width:30px;height:30px;border-radius:50%;border:2px solid rgba(124,92,255,.4)}
-.cb{padding:11px 12px 13px;display:flex;flex-direction:column;gap:5px;flex:1}
-.cn{font-size:13.5px;font-weight:700;color:var(--dark);line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.cd{font-size:11.5px;color:var(--muted);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.cf{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:auto;padding-top:5px}
-.cp{font-family:var(--sans);font-size:14px;font-weight:800;color:var(--dark);font-variant-numeric:tabular-nums;white-space:nowrap}
-.cbadge{font-size:9.5px;color:var(--accent-deep);background:var(--accent-soft);padding:3px 7px;border-radius:8px;font-weight:700;white-space:nowrap}
+.cb{padding:9px 11px 11px;display:flex;flex-direction:column;gap:3px;flex:1}
+.cn{font-size:12.5px;font-weight:500;color:var(--dark);line-height:1.3;letter-spacing:-.1px;display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cf{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:auto;padding-top:3px}
+.cp{font-family:var(--sans);font-size:13px;font-weight:600;color:var(--dark);font-variant-numeric:tabular-nums;white-space:nowrap}
+.cbadge{font-size:9px;color:var(--accent-deep);background:var(--accent-soft);padding:2px 6px;border-radius:7px;font-weight:600;white-space:nowrap}
 .menu-loading{padding:40px;text-align:center;color:var(--muted);font-size:14px}
 .menu-error{padding:32px 20px;text-align:center;color:var(--muted);font-size:13px;line-height:1.6}
 
@@ -388,7 +390,6 @@ body{background:#E9E4F5;font-family:var(--sans);color:var(--dark)}
 .sheet-imgwrap{
   position:relative;width:100%;aspect-ratio:1/1;max-height:54vh;overflow:hidden;
   background:var(--accent-soft);display:flex;align-items:center;justify-content:center;
-  transition:background-color .2s;
 }
 .sheet-img{position:relative;z-index:1;max-width:100%;max-height:100%;object-fit:contain;display:block}
 .sheet-body{padding:18px 20px 26px}
@@ -1134,7 +1135,6 @@ function cardHTML(item, catName) {
     <span class="cimg${src ? '' : ' noimg'}">${img}</span>
     <span class="cb">
       <span class="cn">${esc(item.title)}</span>
-      ${item.description ? `<span class="cd">${esc(item.description)}</span>` : ''}
       <span class="cf"><span class="cp">${esc(priceText(item))}</span>${badge}</span>
     </span>
   </button>`;
